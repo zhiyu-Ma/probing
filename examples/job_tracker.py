@@ -86,3 +86,7 @@ def record_error(error_message):
 
     except Exception as e:
         raise
+start_job()
+import atexit
+
+atexit.register(end_job)
